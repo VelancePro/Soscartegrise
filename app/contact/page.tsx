@@ -268,8 +268,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-titre font-semibold text-gray-900 text-sm mb-1">Téléphone</p>
-                    <a href="tel:0619923340" className="text-gray-600 text-sm hover:text-rouge transition-colors block">
-                      Tél. : 06 19 92 33 40
+                    <a href="tel:0581666900" className="text-gray-600 text-sm hover:text-rouge transition-colors block">
+                      Tél. : 05 81 666 900
                     </a>
                     <a href="tel:0619923340" className="text-gray-600 text-sm hover:text-rouge transition-colors block">
                       Port. : 06 19 92 33 40
@@ -313,19 +313,15 @@ export default function ContactPage() {
                     <p className="font-titre font-semibold text-gray-900 text-sm mb-2">Horaires</p>
                     <div className="flex flex-col gap-1 text-gray-600 text-sm">
                       <div className="flex justify-between gap-6">
-                        <span className="font-medium">Lundi – Jeudi</span>
-                        <span>9h30–12h00 | 13h30–17h30</span>
+                        <span className="font-medium">Lun – Mar – Jeu – Ven</span>
+                        <span>8h30–12h00 | 14h00–17h00</span>
                       </div>
                       <div className="flex justify-between gap-6">
-                        <span className="font-medium">Vendredi</span>
-                        <span>9h30–12h00 | 13h30–17h00</span>
-                      </div>
-                      <div className="flex justify-between gap-6">
-                        <span className="font-medium">Samedi</span>
-                        <span>10h00–14h00</span>
+                        <span className="font-medium">Mercredi</span>
+                        <span>8h30–12h00 (fermé l&apos;après-midi)</span>
                       </div>
                       <div className="flex justify-between gap-6 text-gray-400">
-                        <span className="font-medium">Dimanche</span>
+                        <span className="font-medium">Samedi – Dimanche</span>
                         <span>Fermé</span>
                       </div>
                     </div>
