@@ -7,9 +7,9 @@ import SectionWrapper from '@/components/SectionWrapper';
 import CarteGriseAccordion from '@/components/CarteGriseAccordion';
 
 export const metadata: Metadata = {
-  title: 'Carte grise — Soscartegrise31 Saint-Gaudens',
+  title: 'Carte grise — Soscartegrise Saint-Gaudens',
   description:
-    "Toutes vos démarches carte grise à Saint-Gaudens : changement de titulaire, duplicata, changement d'adresse, véhicule étranger et plus encore. Soscartegrise31, habilité par l'État.",
+    "Toutes vos démarches carte grise à Saint-Gaudens : changement de titulaire, duplicata, changement d'adresse, véhicule étranger et plus encore. Soscartegrise, habilité par l'État.",
 };
 
 const atouts = [
@@ -63,7 +63,7 @@ export default function CarteGrisePage() {
               Votre carte grise en toute simplicité
             </h2>
             <p className="text-gray-600 leading-relaxed text-base">
-              Soscartegrise31 est un professionnel habilité par l&apos;État pour réaliser toutes vos
+              Soscartegrise est un professionnel habilité par l&apos;État pour réaliser toutes vos
               démarches liées au certificat d&apos;immatriculation. Achat de véhicule, perte de carte
               grise, déménagement ou véhicule étranger — nous traitons votre dossier rapidement et
               en toute sécurité.
@@ -81,11 +81,11 @@ export default function CarteGrisePage() {
                 Prendre rendez-vous
               </Link>
               <a
-                href="tel:0581666900"
+                href="tel:0619923340"
                 className="flex items-center justify-center gap-2 border-2 border-gray-200 text-gray-700 font-titre font-bold px-7 py-3.5 rounded-full hover:border-rouge hover:text-rouge transition-colors duration-200"
               >
                 <FiPhone size={16} />
-                05 81 666 900
+                06 19 92 33 40
               </a>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function CarteGrisePage() {
           <div className="relative h-72 lg:h-[420px] rounded-3xl overflow-hidden shadow-xl">
             <Image
               src="/carte-grise-service.webp"
-              alt="Service carte grise Soscartegrise31"
+              alt="Service carte grise Soscartegrise"
               fill
               className="object-cover"
             />
@@ -141,7 +141,7 @@ export default function CarteGrisePage() {
           </div>
           <CarteGriseAccordion />
           <p className="text-gray-400 text-xs text-center mt-6">
-            * Les tarifs indiqués correspondent aux frais de service de Soscartegrise31. Les taxes
+            * Les tarifs indiqués correspondent aux frais de service de Soscartegrise. Les taxes
             fiscales liées à l&apos;immatriculation (cheval fiscal, malus…) sont en sus et varient
             selon le véhicule et la région.
           </p>
@@ -166,11 +166,11 @@ export default function CarteGrisePage() {
               Nous contacter
             </Link>
             <a
-              href="tel:0581666900"
+              href="tel:0619923340"
               className="flex items-center justify-center gap-2 border-2 border-white text-white font-titre font-bold px-8 py-4 rounded-full hover:bg-white/10 transition-colors duration-200"
             >
               <FiPhone size={18} />
-              05 81 666 900
+              06 19 92 33 40
             </a>
           </div>
         </div>

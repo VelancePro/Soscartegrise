@@ -7,9 +7,9 @@ import SectionWrapper from '@/components/SectionWrapper';
 import PermisAccordion from '@/components/PermisAccordion';
 
 export const metadata: Metadata = {
-  title: 'Permis de conduire — Soscartegrise31 Saint-Gaudens',
+  title: 'Permis de conduire — Soscartegrise Saint-Gaudens',
   description:
-    "Toutes vos démarches permis de conduire à Saint-Gaudens : première demande, duplicata, renouvellement, récupération et changement d'état civil. Soscartegrise31 vous accompagne.",
+    "Toutes vos démarches permis de conduire à Saint-Gaudens : première demande, duplicata, renouvellement, récupération et changement d'état civil. Soscartegrise vous accompagne.",
 };
 
 const services = [
@@ -108,11 +108,11 @@ export default function PermisConduitePage() {
                 Prendre rendez-vous
               </Link>
               <a
-                href="tel:0581666900"
+                href="tel:0619923340"
                 className="flex items-center justify-center gap-2 border-2 border-gray-200 text-gray-700 font-titre font-bold px-7 py-3.5 rounded-full hover:border-rouge hover:text-rouge transition-colors duration-200"
               >
                 <FiPhone size={16} />
-                05 81 666 900
+                06 19 92 33 40
               </a>
             </div>
           </div>
@@ -229,11 +229,11 @@ export default function PermisConduitePage() {
               Nous contacter
             </Link>
             <a
-              href="tel:0581666900"
+              href="tel:0619923340"
               className="flex items-center justify-center gap-2 border-2 border-white text-white font-titre font-bold px-8 py-4 rounded-full hover:bg-white/10 transition-colors duration-200"
             >
               <FiPhone size={18} />
-              05 81 666 900
+              06 19 92 33 40
             </a>
           </div>
         </div>

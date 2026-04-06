@@ -32,8 +32,6 @@ const permisLinks = [
   { href: '/permis-conduire#recuperation', label: 'Demande de récupération' },
   { href: '/permis-conduire#renouvellement', label: 'Demande de renouvellement' },
   { href: '/permis-conduire#etat-civil', label: "Changement d'état civil" },
-  { href: '/permis-conduire#permis-etranger', label: 'Changement de permis étranger' },
-  { href: '/permis-conduire#permis-international', label: 'Demande de permis international' },
 ];
 
 export default function Header() {
@@ -92,7 +90,7 @@ export default function Header() {
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="/logo.png"
-                alt="Logo Soscartegrise31"
+                alt="Logo Soscartegrise"
                 width={180}
                 height={70}
                 className="h-[90px] w-auto object-contain"
@@ -211,11 +209,11 @@ export default function Header() {
             {/* Téléphone + burger */}
             <div className="flex items-center gap-3">
               <a
-                href="tel:0581666900"
+                href="tel:0619923340"
                 className="hidden sm:flex items-center gap-2 bg-rouge text-white font-titre font-bold text-sm px-4 py-2 rounded-full hover:bg-red-800 transition-colors duration-200"
               >
                 <FiPhone className="text-base" />
-                05 81 666 900
+                06 19 92 33 40
               </a>
 
               {/* Burger mobile */}
@@ -312,11 +310,11 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="tel:0581666900"
+              href="tel:0619923340"
               className="flex items-center gap-2 bg-rouge text-white font-titre font-bold text-sm px-4 py-3 rounded-lg mt-2 justify-center"
             >
               <FiPhone />
-              05 81 666 900
+              06 19 92 33 40
             </a>
           </nav>
         </div>

@@ -268,8 +268,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-titre font-semibold text-gray-900 text-sm mb-1">Téléphone</p>
-                    <a href="tel:0581666900" className="text-gray-600 text-sm hover:text-rouge transition-colors block">
-                      Tél. : 05 81 666 900
+                    <a href="tel:0619923340" className="text-gray-600 text-sm hover:text-rouge transition-colors block">
+                      Tél. : 06 19 92 33 40
                     </a>
                     <a href="tel:0619923340" className="text-gray-600 text-sm hover:text-rouge transition-colors block">
                       Port. : 06 19 92 33 40
@@ -334,7 +334,7 @@ export default function ContactPage() {
               </div>
 
               <a
-                href="tel:0581666900"
+                href="tel:0619923340"
                 className="flex items-center justify-center gap-2 bg-rouge text-white font-titre font-bold px-7 py-3.5 rounded-xl hover:bg-red-700 transition-colors duration-200 mt-2"
               >
                 <FiPhone size={16} />
@@ -352,7 +352,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localisation Soscartegrise31 — 17 Boulevard Charles de Gaulle, Saint-Gaudens"
+                title="Localisation Soscartegrise — 17 Boulevard Charles de Gaulle, Saint-Gaudens"
               />
             </div>
           </div>

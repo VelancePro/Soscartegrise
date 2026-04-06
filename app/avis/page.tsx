@@ -6,9 +6,9 @@ import CTABanner from '@/components/CTABanner';
 import SectionWrapper from '@/components/SectionWrapper';
 
 export const metadata: Metadata = {
-  title: 'Avis clients — Soscartegrise31 Saint-Gaudens',
+  title: 'Avis clients — Soscartegrise Saint-Gaudens',
   description:
-    'Découvrez les avis de nos clients satisfaits. Note de 5/5 sur Google. Avis certifiés pour Soscartegrise31 à Saint-Gaudens.',
+    'Découvrez les avis de nos clients satisfaits. Note de 5/5 sur Google. Avis certifiés pour Soscartegrise à Saint-Gaudens.',
 };
 
 interface AvisClient {

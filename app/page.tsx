@@ -15,13 +15,13 @@ import PrestationImageCard from '@/components/PrestationImageCard';
 import CarteFrance from '@/components/CarteFrance';
 
 export const metadata: Metadata = {
-  title: 'Soscartegrise31 — Carte grise à Saint-gaudens | Habilité État',
+  title: 'Soscartegrise — Carte grise à Saint-gaudens | Habilité État',
   description:
-    'Soscartegrise31, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne. Habilité par l\'État. Certificat provisoire en 48h-72h.',
+    'Soscartegrise, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne. Habilité par l\'État. Certificat provisoire en 48h-72h.',
   openGraph: {
-    title: 'Soscartegrise31 — Carte grise à Saint-gaudens | Habilité État',
+    title: 'Soscartegrise — Carte grise à Saint-gaudens | Habilité État',
     description:
-      'Soscartegrise31, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne.',
+      'Soscartegrise, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne.',
   },
 };
 
@@ -123,8 +123,8 @@ export default function HomePage() {
           }}
         />
         {/* Gradient overlay — sombre à gauche, léger à droite */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/25" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/15" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
 
         {/* Badge flottant — droite, un peu plus bas */}
         <BadgeFlottant />
@@ -135,7 +135,7 @@ export default function HomePage() {
           {/* Badge habilitation */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/25 text-white/90 text-xs font-titre font-semibold px-4 py-2 rounded-full mb-6">
             <FiShield size={13} className="text-yellow-300" />
-            Habilité par l&apos;État — Haute-Garonne
+            Habilité par l&apos;État
           </div>
 
           {/* Titre massif */}
@@ -149,7 +149,7 @@ export default function HomePage() {
 
           {/* Sous-titre */}
           <p className="text-white/80 text-base md:text-lg max-w-lg mb-10 leading-relaxed">
-            Évitez la préfecture. Votre certificat provisoire d&apos;immatriculation en 48h à 72h,
+            Évitez la préfecture. Recevez votre certificat d&apos;immatriculation en 48h à 72h,
             dossier traité en 10 minutes sur place.
           </p>
 
@@ -216,7 +216,7 @@ export default function HomePage() {
           <div className="relative h-80 lg:h-[420px] rounded-3xl overflow-hidden shadow-2xl">
             <Image
               src="/carte-grise-presentation.webp"
-              alt="Soscartegrise31 — Spécialiste carte grise à Saint-Gaudens"
+              alt="Soscartegrise — Spécialiste carte grise à Saint-Gaudens"
               fill
               className="object-cover"
             />
@@ -254,7 +254,7 @@ export default function HomePage() {
             <PrestationImageCard
               image="/plaque-immatriculation-service.jpg"
               titre="Fabrication de plaques d'immatriculation"
-              texteHover="Besoin de nouvelles plaques ? SOS Carte Grise fabrique vos plaques d'immatriculation sur place, aux normes en vigueur et prêtes en quelques minutes. Que ce soit pour un changement, une perte ou une plaque endommagée, nous vous garantissons un service rapide, homologué et de qualité. Voiture, moto, utilitaire : vos plaques sont prêtes à poser en un rien de temps !"
+              texteHover="Besoin de nouvelles plaques ? SOS Carte Grise fabrique vos plaques d'immatriculation sur place, aux normes en vigueur et prêtes en quelques minutes. Que ce soit pour un changement, une perte ou une plaque endommagée, nous vous garantissons un service rapide, homologué et de qualité. Voiture, utilitaire : vos plaques sont prêtes à poser en un rien de temps !"
               href="/plaques"
             />
           </div>
@@ -285,7 +285,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-titre font-extrabold text-white text-3xl md:text-4xl uppercase tracking-wide">
-              Pourquoi choisir Soscartegrise31 ?
+              Pourquoi choisir Soscartegrise ?
             </h2>
             <p className="text-white/70 mt-4 max-w-xl mx-auto">
               Votre satisfaction étant placée au cœur de nos préoccupations, nous vous réservons un bon accueil et vous assurons une prise en charge rapide.

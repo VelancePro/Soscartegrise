@@ -22,21 +22,21 @@ export default function Footer() {
           <div className="flex flex-col gap-5">
             <Image
               src="/logo.png"
-              alt="Logo Soscartegrise31"
+              alt="Logo Soscartegrise"
               width={270}
               height={105}
               className="h-[90px] w-auto object-contain brightness-0 invert"
             />
             <p className="text-gray-300 text-sm leading-relaxed">
-              Soscartegrise31, votre spécialiste agréé pour toutes vos démarches de certificat
-              d&apos;immatriculation en Haute-Garonne. Habilité par l&apos;État, rapide et fiable.
+              Soscartegrise, votre spécialiste agréé pour toutes vos démarches de certificat
+              d&apos;immatriculation. Habilité par l&apos;État, rapide et fiable.
             </p>
             <div className="flex items-center gap-3 mt-1">
               <a
                 href="https://share.google/DJ0en1qq93ESjgewW"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Avis Google Soscartegrise31"
+                aria-label="Avis Google Soscartegrise"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 <FaGoogle size={22} />
@@ -99,9 +99,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <FiClock className="text-rouge mt-0.5 flex-shrink-0" size={18} />
                 <div className="text-gray-300 text-sm flex flex-col gap-1">
-                  <span>Lun–Jeu : 9h30–12h00 | 13h30–17h30</span>
-                  <span>Vendredi : 9h30–12h00 | 13h30–17h00</span>
-                  <span>Samedi : 10h00–14h00</span>
+                  <span>Lun–Ven : 8h30–12h00 | 14h00–17h00</span>
+                  <span>Mercredi : 8h30–12h00 (fermé l&apos;après-midi)</span>
                 </div>
               </li>
             </ul>
@@ -112,7 +111,7 @@ export default function Footer() {
       {/* Bande rouge basse */}
       <div className="bg-rouge py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-white text-xs">
-          <span>© {new Date().getFullYear()} Soscartegrise31 — Tous droits réservés</span>
+          <span>© {new Date().getFullYear()} Soscartegrise — Tous droits réservés</span>
           <a
             href="https://velance.fr/"
             target="_blank"

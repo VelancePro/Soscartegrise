@@ -6,9 +6,9 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 export const metadata: Metadata = {
-  title: "Plaques d'immatriculation — Soscartegrise31",
+  title: "Plaques d'immatriculation — Soscartegrise",
   description:
-    "Fabrication de plaques d'immatriculation aux normes SIV à Saint-Gaudens. Passez commande lors de votre carte grise chez Soscartegrise31.",
+    "Fabrication de plaques d'immatriculation aux normes SIV à Saint-Gaudens. Passez commande lors de votre carte grise chez Soscartegrise.",
 };
 
 const normes = [
@@ -18,7 +18,7 @@ const normes = [
   },
   {
     titre: 'Matériaux',
-    description: 'Aluminium ou polycarbonate de haute qualité, garantissant durabilité et lisibilité.',
+    description: 'Plexiglas de haute qualité, garantissant durabilité et lisibilité.',
   },
   {
     titre: 'Police d\'immatriculation',
@@ -26,7 +26,7 @@ const normes = [
   },
   {
     titre: 'Identifiant régional',
-    description: 'Logo de la région Occitanie et numéro du département (31 pour Haute-Garonne) en option.',
+    description: 'Logo de la région Occitanie avec les départements 31, 09 et 65 disponibles.',
   },
   {
     titre: 'Bande bleue européenne',
@@ -64,7 +64,7 @@ export default function PlaquesPage() {
               Vos plaques fabriquées sur place
             </h2>
             <p className="text-gray-600 leading-relaxed text-base">
-              Soscartegrise31 vous propose également la fabrication de vos plaques
+              Soscartegrise vous propose également la fabrication de vos plaques
               d&apos;immatriculation aux normes SIV. Passez commande directement sur place lors de
               votre venue pour votre carte grise.
             </p>
@@ -81,11 +81,11 @@ export default function PlaquesPage() {
                 Nous contacter
               </Link>
               <a
-                href="tel:0581666900"
+                href="tel:0619923340"
                 className="flex items-center justify-center gap-2 border-2 border-gray-200 text-gray-700 font-titre font-bold px-7 py-3.5 rounded-full hover:border-rouge hover:text-rouge transition-colors duration-200"
               >
                 <FiPhone size={16} />
-                05 81 666 900
+                06 19 92 33 40
               </a>
             </div>
           </div>
@@ -253,7 +253,7 @@ export default function PlaquesPage() {
             Obtenez vos plaques en une seule visite
           </h2>
           <p className="text-white/80 max-w-2xl">
-            Lors de votre venue chez Soscartegrise31 pour votre carte grise, nous pouvons également
+            Lors de votre venue chez Soscartegrise pour votre carte grise, nous pouvons également
             fabriquer vos plaques d&apos;immatriculation sur place. Vous repartez avec tout ce qu&apos;il
             vous faut en une seule démarche.
           </p>
@@ -265,11 +265,11 @@ export default function PlaquesPage() {
               Prendre rendez-vous
             </Link>
             <a
-              href="tel:0581666900"
+              href="tel:0619923340"
               className="flex items-center justify-center gap-2 border-2 border-white text-white font-titre font-bold px-8 py-4 rounded-full hover:bg-white/10 transition-colors duration-200"
             >
               <FiPhone size={18} />
-              05 81 666 900
+              06 19 92 33 40
             </a>
           </div>
         </div>

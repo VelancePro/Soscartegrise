@@ -26,7 +26,7 @@ export default function CTABanner({
         <p className="text-red-100 text-lg max-w-xl">{sousTitre}</p>
         <div className="flex flex-col sm:flex-row gap-4 mt-2">
           <a
-            href="tel:0581666900"
+            href="tel:0619923340"
             className="flex items-center justify-center gap-2 bg-white text-rouge font-titre font-bold px-7 py-3.5 rounded-full hover:bg-gray-100 transition-colors duration-200 text-base shadow-lg"
           >
             <FiPhone />

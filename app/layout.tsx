@@ -21,11 +21,11 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.soscartegrise31.fr'),
   title: {
-    default: 'Soscartegrise31 — Carte grise à Saint-gaudens | Habilité État',
-    template: '%s | Soscartegrise31',
+    default: 'Soscartegrise — Carte grise à Saint-gaudens | Habilité État',
+    template: '%s | Soscartegrise',
   },
   description:
-    'Soscartegrise31, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne. Habilité par l\'État. Dossier traité en 10 minutes.',
+    'Soscartegrise, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne. Habilité par l\'État. Dossier traité en 10 minutes.',
   keywords: [
     'carte grise',
     'Saint-Gaudens',
@@ -39,16 +39,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'Soscartegrise31',
-    title: 'Soscartegrise31 — Carte grise à Saint-gaudens | Habilité État',
+    siteName: 'Soscartegrise',
+    title: 'Soscartegrise — Carte grise à Saint-gaudens | Habilité État',
     description:
-      'Soscartegrise31, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne.',
+      'Soscartegrise, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Soscartegrise31 — Carte grise à Saint-gaudens',
+    title: 'Soscartegrise — Carte grise à Saint-gaudens',
     description:
-      'Soscartegrise31, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne.',
+      'Soscartegrise, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne.',
   },
   robots: {
     index: true,
@@ -68,8 +68,8 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <a
-          href="tel:0581666900"
-          aria-label="Appeler Soscartegrise31"
+          href="tel:0619923340"
+          aria-label="Appeler Soscartegrise"
           className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-rouge text-white rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 hover:scale-110 transition-all duration-200"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

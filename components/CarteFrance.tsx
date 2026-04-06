@@ -5,27 +5,27 @@ import { geoConicConformal, geoMercator, geoPath, GeoPermissibleObjects } from '
 import { Feature, FeatureCollection, Geometry } from 'geojson';
 
 const prixRegions: Record<string, number | null> = {
-  'Île-de-France': 54.95,
-  'Hauts-de-France': 42,
+  'Île-de-France': 68.95,
+  'Hauts-de-France': 43,
   'Normandie': 60,
   'Bretagne': 60,
   'Pays de la Loire': 51,
   'Centre-Val de Loire': 60,
   'Bourgogne-Franche-Comté': 60,
   'Grand Est': 60,
-  'Nouvelle-Aquitaine': 53,
+  'Nouvelle-Aquitaine': 58,
   'Occitanie': 59.50,
   'Auvergne-Rhône-Alpes': 43,
-  "Provence-Alpes-Côte d'Azur": 59,
-  'Corse': 43,
+  "Provence-Alpes-Côte d'Azur": 60,
+  'Corse': 53,
   'Guadeloupe': 41,
   'Martinique': 53,
   'Guyane': 42.50,
-  'La Réunion': 57,
+  'La Réunion': 60,
   'Mayotte': 30,
 };
 
-const MOYENNE = 43.70;
+const MOYENNE = 53.50;
 
 function getCouleur(prix: number | null) {
   if (prix === null) return '#d1d5db';
@@ -218,6 +218,8 @@ export default function CarteFrance() {
           <svg
             viewBox={`0 0 ${W} ${H}`}
             style={{ width: '100%', height: 'auto' }}
+            textRendering="geometricPrecision"
+            shapeRendering="geometricPrecision"
           >
             {/* Régions */}
             {regions.map((r) => (
@@ -261,7 +263,7 @@ export default function CarteFrance() {
                       x={r.cx}
                       dy={i === 0 ? offsetY : lineH}
                       style={{
-                        fontSize: '7.5px',
+                        fontSize: '8px',
                         fontFamily: 'Montserrat, sans-serif',
                         fontWeight: 700,
                         fill: '#1a1a1a',

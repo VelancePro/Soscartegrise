@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { FiChevronDown, FiAlertCircle, FiAward, FiCopy, FiEdit2, FiRefreshCw, FiUnlock, FiGlobe, FiCompass } from 'react-icons/fi';
+import { FiChevronDown, FiAlertCircle, FiAward, FiCopy, FiEdit2, FiRefreshCw, FiUnlock } from 'react-icons/fi';
 import type { IconType } from 'react-icons';
 
 interface DocItem {
@@ -137,23 +137,6 @@ const sections: Section[] = [
           "Un justificatif d'identité de l'hébergeant en cours de validité",
         ],
       },
-    ],
-  },
-  {
-    id: 'permis-etranger',
-    titre: 'Changement de permis étranger',
-    icone: FiGlobe,
-    documents: [
-      { texte: 'Documents à compléter — contenu à venir.' },
-    ],
-  },
-  {
-    id: 'permis-international',
-    titre: 'Demande de permis international',
-    sousTitre: "Demande pour conduire à l'étranger",
-    icone: FiCompass,
-    documents: [
-      { texte: 'Documents à compléter — contenu à venir.' },
     ],
   },
 ];
