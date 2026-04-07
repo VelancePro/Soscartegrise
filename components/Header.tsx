@@ -93,7 +93,7 @@ export default function Header() {
                 alt="Logo Soscartegrise"
                 width={180}
                 height={70}
-                className="h-[90px] w-auto object-contain"
+                className="h-[135px] w-auto object-contain"
                 priority
               />
             </Link>

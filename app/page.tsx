@@ -299,7 +299,7 @@ export default function HomePage() {
               gradient="linear-gradient(145deg, #a855f7, #ec4899)"
               icone={<FaHandshake size={64} className="text-white drop-shadow-lg" />}
               label="L'écoute"
-              labelColor="text-rouge"
+              labelColor="text-white"
               texte="Parce que chaque client est unique, nous prenons le temps de vous écouter attentivement pour comprendre vos besoins et proposons la solution la mieux adaptée. Nous restons à votre disposition pour répondre à toutes vos questions et vous accompagner pas à pas, avec patience et bienveillance."
             />
 
@@ -309,7 +309,7 @@ export default function HomePage() {
                 gradient="linear-gradient(145deg, #06b6d4, #3b82f6)"
                 icone={<FiMapPin size={68} className="text-white drop-shadow-lg" strokeWidth={1.5} />}
                 label="La proximité au cœur de notre service"
-                labelColor="text-bleu"
+                labelColor="text-white"
                 texte="Chez SOS CARTE GRISE, la proximité n'est pas qu'une promesse, c'est notre façon de travailler au quotidien. Présents localement et à l'écoute de vos besoins, nous vous accompagnons dans toutes vos démarches administratives, avec simplicité, rapidité et humanité. Un service proche de chez vous, proche de vous."
                 taille="grand"
               />
@@ -320,7 +320,7 @@ export default function HomePage() {
               gradient="linear-gradient(145deg, #f97316, #ec4899)"
               icone={<FiClock size={64} className="text-white drop-shadow-lg" strokeWidth={1.5} />}
               label="Un service rapide et efficace"
-              labelColor="text-rouge"
+              labelColor="text-white"
               texte="Ne perdez plus de temps avec les démarches administratives ! Chez SOS CARTE GRISE, nous traitons vos démarches en un temps record. Grâce à notre expertise et à notre agrément officiel, vos démarches sont simplifiées et finalisées rapidement. Rapide, fiable, sans stress."
             />
 

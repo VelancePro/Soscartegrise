@@ -53,10 +53,10 @@ export default function PointFortCard({
 
       {/* Texte */}
       <div className="flex flex-col gap-3">
-        <span className={`${labelColor} font-titre font-bold text-xs uppercase tracking-widest`}>
+        <span className={`${labelColor} font-titre font-bold text-sm uppercase tracking-wider drop-shadow-md`}>
           {label}
         </span>
-        <p className="text-white/80 text-sm leading-relaxed">{texte}</p>
+        <p className="text-white text-sm leading-relaxed drop-shadow-sm">{texte}</p>
       </div>
     </div>
   );
