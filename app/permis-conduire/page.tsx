@@ -7,9 +7,13 @@ import SectionWrapper from '@/components/SectionWrapper';
 import PermisAccordion from '@/components/PermisAccordion';
 
 export const metadata: Metadata = {
-  title: 'Permis de conduire — Soscartegrise Saint-Gaudens',
-  description:
-    "Toutes vos démarches permis de conduire à Saint-Gaudens : première demande, duplicata, renouvellement, récupération et changement d'état civil. Soscartegrise vous accompagne.",
+  title: "Permis de conduire Saint-Gaudens — Renouvellement & démarches | Soscartegrise",
+  description: "Renouvellement de permis, échange de permis étranger, duplicata. Soscartegrise vous accompagne dans toutes vos démarches permis à Saint-Gaudens.",
+  keywords: 'renouvellement permis de conduire, permis de conduire Saint-Gaudens, duplicata permis, permis étranger France',
+  openGraph: {
+    title: "Permis de conduire Saint-Gaudens — Renouvellement & démarches | Soscartegrise",
+    description: "Renouvellement de permis, échange de permis étranger, duplicata à Saint-Gaudens.",
+  },
 };
 
 const services = [

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
 import Image from 'next/image';
 import { FiShield, FiZap, FiCheckCircle, FiFileText, FiPhone, FiExternalLink, FiMapPin, FiClock } from 'react-icons/fi';
 import { FaHandshake } from 'react-icons/fa';
@@ -15,13 +16,13 @@ import PrestationImageCard from '@/components/PrestationImageCard';
 import CarteFrance from '@/components/CarteFrance';
 
 export const metadata: Metadata = {
-  title: 'Soscartegrise — Carte grise à Saint-gaudens | Habilité État',
+  title: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
   description:
-    'Soscartegrise, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne. Habilité par l\'État. Certificat provisoire en 48h-72h.',
+    "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Changement de titulaire, duplicata, carte grise étrangère. Évitez la préfecture, dossier traité en 10 minutes sur place.",
+  keywords: 'carte grise Saint-Gaudens, carte grise 31, carte grise Toulouse, certificat immatriculation Haute-Garonne, carte grise habilité état',
   openGraph: {
-    title: 'Soscartegrise — Carte grise à Saint-gaudens | Habilité État',
-    description:
-      'Soscartegrise, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne.',
+    title: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
+    description: "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Habilité par l'État.",
   },
 };
 
@@ -111,6 +112,40 @@ const documents = [
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Soscartegrise",
+        "description": "Spécialiste de la carte grise à Saint-Gaudens et en Haute-Garonne, habilité par l'État.",
+        "url": "https://www.soscartegrise.fr",
+        "email": "soscartegrise31@hotmail.com",
+        "telephone": ["+33581666900", "+33619923340"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "17 Boulevard Charles de Gaulle",
+          "addressLocality": "Saint-Gaudens",
+          "postalCode": "31800",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.1066,
+          "longitude": 0.7225
+        },
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"], "opens": "08:30", "closes": "12:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"], "opens": "14:00", "closes": "17:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "08:30", "closes": "12:00" }
+        ],
+        "areaServed": ["Saint-Gaudens", "Toulouse", "Haute-Garonne", "Occitanie"],
+        "priceRange": "€€",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "10",
+          "bestRating": "5"
+        }
+      }} />
       {/* ===== SECTION 1 — HERO ===== */}
       <section className="relative min-h-[92vh] flex items-end overflow-hidden">
         {/* Background photo */}

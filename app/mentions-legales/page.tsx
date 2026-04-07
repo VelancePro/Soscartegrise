@@ -4,8 +4,9 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 export const metadata: Metadata = {
-  title: 'Mentions légales — Soscartegrise',
-  description: 'Mentions légales du site Soscartegrise — informations légales, hébergement, propriété intellectuelle et données personnelles.',
+  title: "Mentions légales | Soscartegrise",
+  description: "Mentions légales du site Soscartegrise — informations légales, hébergement, propriété intellectuelle et données personnelles.",
+  robots: { index: false, follow: false },
 };
 
 const sections = [

@@ -19,41 +19,39 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.soscartegrise31.fr'),
+  metadataBase: new URL('https://www.soscartegrise.fr'),
   title: {
-    default: 'Soscartegrise — Carte grise à Saint-gaudens | Habilité État',
+    default: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
     template: '%s | Soscartegrise',
   },
   description:
-    'Soscartegrise, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne. Habilité par l\'État. Dossier traité en 10 minutes.',
+    "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Changement de titulaire, duplicata, carte grise étrangère. Évitez la préfecture, dossier traité en 10 minutes sur place.",
   keywords: [
-    'carte grise',
-    'Saint-Gaudens',
-    'Haute-Garonne',
-    'certificat immatriculation',
-    'changement titulaire',
+    'carte grise Saint-Gaudens',
+    'carte grise 31',
+    'carte grise Toulouse',
+    'certificat immatriculation Haute-Garonne',
+    'carte grise habilité état',
+    'changement de titulaire carte grise',
     'duplicata carte grise',
-    'habilité état',
-    'Occitanie',
+    'carte grise étrangère France',
   ],
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Soscartegrise',
-    title: 'Soscartegrise — Carte grise à Saint-gaudens | Habilité État',
-    description:
-      'Soscartegrise, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne.',
+    title: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
+    description: "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Habilité par l'État, dossier traité en 10 minutes.",
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Soscartegrise — Carte grise Saint-Gaudens' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Soscartegrise — Carte grise à Saint-gaudens',
-    description:
-      'Soscartegrise, votre spécialiste agréé de la carte grise à Saint-gaudens et en Haute-Garonne.',
+    title: 'Carte grise à Saint-Gaudens | Soscartegrise',
+    description: "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Habilité par l'État.",
+    images: ['/og-image.jpg'],
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
+  verification: { google: 'GOOGLE_SEARCH_CONSOLE_TOKEN' },
 };
 
 export default function RootLayout({

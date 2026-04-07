@@ -6,9 +6,12 @@ import CTABanner from '@/components/CTABanner';
 import SectionWrapper from '@/components/SectionWrapper';
 
 export const metadata: Metadata = {
-  title: 'Avis clients — Soscartegrise Saint-Gaudens',
-  description:
-    'Découvrez les avis de nos clients satisfaits. Note de 5/5 sur Google. Avis certifiés pour Soscartegrise à Saint-Gaudens.',
+  title: "Avis clients Soscartegrise — 5/5 sur Google | Saint-Gaudens",
+  description: "Découvrez les avis de nos clients satisfaits. Soscartegrise, spécialiste carte grise à Saint-Gaudens, 5/5 sur Google.",
+  openGraph: {
+    title: "Avis clients Soscartegrise — 5/5 sur Google | Saint-Gaudens",
+    description: "Soscartegrise, spécialiste carte grise à Saint-Gaudens, 5/5 sur Google.",
+  },
 };
 
 interface AvisClient {

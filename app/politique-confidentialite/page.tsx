@@ -3,8 +3,9 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 export const metadata: Metadata = {
-  title: 'Politique de confidentialité — Soscartegrise',
-  description: "Politique de confidentialité du site Soscartegrise — collecte et utilisation des données personnelles, cookies et droits des utilisateurs.",
+  title: "Politique de confidentialité | Soscartegrise",
+  description: "Politique de confidentialité de Soscartegrise — RGPD, collecte et utilisation des données personnelles.",
+  robots: { index: false, follow: false },
 };
 
 const sections = [

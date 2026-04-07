@@ -6,9 +6,13 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 export const metadata: Metadata = {
-  title: "Plaques d'immatriculation — Soscartegrise",
-  description:
-    "Fabrication de plaques d'immatriculation aux normes SIV à Saint-Gaudens. Passez commande lors de votre carte grise chez Soscartegrise.",
+  title: "Plaques d'immatriculation Saint-Gaudens | Soscartegrise",
+  description: "Fabrication de plaques d'immatriculation aux normes SIV à Saint-Gaudens. Passez commande directement sur place chez Soscartegrise.",
+  keywords: "plaques immatriculation Saint-Gaudens, fabrication plaque SIV, plaque immatriculation 31",
+  openGraph: {
+    title: "Plaques d'immatriculation Saint-Gaudens | Soscartegrise",
+    description: "Fabrication de plaques d'immatriculation aux normes SIV à Saint-Gaudens.",
+  },
 };
 
 const normes = [

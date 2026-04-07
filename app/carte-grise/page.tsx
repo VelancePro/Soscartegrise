@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import JsonLd from '@/components/JsonLd';
 import Link from 'next/link';
 import { FiPhone, FiShield, FiClock, FiCheckCircle, FiStar } from 'react-icons/fi';
 import PageHero from '@/components/PageHero';
@@ -7,9 +8,13 @@ import SectionWrapper from '@/components/SectionWrapper';
 import CarteGriseAccordion from '@/components/CarteGriseAccordion';
 
 export const metadata: Metadata = {
-  title: 'Carte grise — Soscartegrise Saint-Gaudens',
-  description:
-    "Toutes vos démarches carte grise à Saint-Gaudens : changement de titulaire, duplicata, changement d'adresse, véhicule étranger et plus encore. Soscartegrise, habilité par l'État.",
+  title: "Carte grise Saint-Gaudens — Toutes démarches | Soscartegrise",
+  description: "Changement de titulaire, duplicata, changement d'adresse, carte grise étrangère... Soscartegrise traite tous vos dossiers en 10 minutes à Saint-Gaudens.",
+  keywords: 'carte grise Saint-Gaudens, changement titulaire, duplicata carte grise, carte grise 31, carte grise Haute-Garonne',
+  openGraph: {
+    title: "Carte grise Saint-Gaudens — Toutes démarches | Soscartegrise",
+    description: "Changement de titulaire, duplicata, changement d'adresse, carte grise étrangère à Saint-Gaudens.",
+  },
 };
 
 const atouts = [
@@ -38,6 +43,37 @@ const atouts = [
 export default function CarteGrisePage() {
   return (
     <>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Combien de temps pour obtenir ma carte grise à Saint-Gaudens ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Votre dossier est traité en moins de 10 minutes sur place. Le certificat provisoire arrive sous 48h à 72h." }
+          },
+          {
+            "@type": "Question",
+            "name": "Faut-il se déplacer en préfecture ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Non, Soscartegrise est habilité par l'État. Nous gérons toutes vos démarches sans passage en préfecture." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel est le prix du cheval fiscal en Occitanie ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Le prix du cheval fiscal en Occitanie est de 59,50 €." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels documents pour un changement de titulaire ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Certificat de cession, pièce d'identité, justificatif de domicile, contrôle technique de moins de 6 mois si le véhicule a plus de 4 ans." }
+          },
+          {
+            "@type": "Question",
+            "name": "Soscartegrise intervient-il uniquement à Saint-Gaudens ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Non, nous intervenons sur tout le département de la Haute-Garonne (31) et l'Occitanie, notamment à Toulouse, Saint-Gaudens, Muret et alentours." }
+          }
+        ]
+      }} />
       <PageHero
         titre="Carte grise"
         sousTitre="Toutes vos démarches de certificat d'immatriculation, gérées sur place à Saint-Gaudens."
