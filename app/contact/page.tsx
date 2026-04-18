@@ -26,11 +26,20 @@ export default function ContactPage() {
     formState: { errors, isSubmitting },
   } = useForm<FormData>();
 
+  const [error, setError] = useState<string | null>(null);
+
   const onSubmit = async (data: FormData) => {
-    // Simulation d'envoi — à connecter à une API ou service email
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log('Form data:', data);
-    setSubmitted(true);
+    setError(null);
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    if (res.ok) {
+      setSubmitted(true);
+    } else {
+      setError("Une erreur est survenue. Veuillez réessayer ou nous appeler directement.");
+    }
   };
 
   return (
@@ -231,6 +240,10 @@ export default function ContactPage() {
                 </div>
                 {errors.rgpd && (
                   <p className="text-rouge text-xs -mt-3">{errors.rgpd.message}</p>
+                )}
+
+                {error && (
+                  <p className="text-rouge text-sm bg-rouge/5 border border-rouge/20 rounded-xl px-4 py-3">{error}</p>
                 )}
 
                 <button
