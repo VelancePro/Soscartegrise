@@ -197,12 +197,12 @@ export default function HomePage() {
               <FiPhone size={18} />
               Contactez-nous
             </Link>
-            <Link
-              href="/prestations"
+            <a
+              href="#prestations"
               className="inline-flex items-center justify-center gap-2 border-2 border-white/60 text-white font-titre font-bold px-8 py-4 rounded-xl text-base hover:bg-white hover:text-gray-900 transition-all duration-200 backdrop-blur-sm"
             >
               Nos prestations
-            </Link>
+            </a>
           </div>
 
           {/* Badges bas */}
@@ -260,7 +260,7 @@ export default function HomePage() {
       </SectionWrapper>
 
       {/* ===== SECTION 3 — PRESTATIONS ===== */}
-      <SectionWrapper className="py-20 px-4 bg-gray-50">
+      <SectionWrapper id="prestations" className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <span className="bg-rouge/10 text-rouge text-xs font-titre font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
