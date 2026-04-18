@@ -119,7 +119,7 @@ export default function Footer() {
             className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
           >
             <Image src="/icone-velance.png" alt="Velance" width={32} height={32} className="h-8 w-auto" />
-            <span className="text-white/90">Designed by velance</span>
+            <span className="text-white/90">Designed by velance.fr</span>
           </a>
           <div className="flex gap-4">
             <Link href="/mentions-legales" className="hover:underline">
