@@ -9,7 +9,7 @@ export async function POST(request: Request) {
 
   try {
     await resend.emails.send({
-      from: 'Contact Soscartegrise <onboarding@resend.dev>',
+      from: 'Contact Soscartegrise <contact@soscartegrise31.fr>',
       to: process.env.CONTACT_EMAIL || 'soscartegrise31@hotmail.com',
       replyTo: email,
       subject: `Nouvelle demande de contact — ${nom} ${prenom || ''}`,
