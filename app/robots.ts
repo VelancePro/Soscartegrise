@@ -3,6 +3,6 @@ import { MetadataRoute } from 'next';
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: '*', allow: '/', disallow: '/api/' },
-    sitemap: 'https://www.soscartegrise.fr/sitemap.xml',
+    sitemap: 'https://www.soscartegrise31.fr/sitemap.xml',
   };
 }

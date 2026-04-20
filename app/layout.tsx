@@ -20,7 +20,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.soscartegrise.fr'),
+  metadataBase: new URL('https://www.soscartegrise31.fr'),
   title: {
     default: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
     template: '%s | Soscartegrise',

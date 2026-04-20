@@ -117,7 +117,7 @@ export default function HomePage() {
         "@type": "LocalBusiness",
         "name": "Soscartegrise",
         "description": "Spécialiste de la carte grise à Saint-Gaudens et en Haute-Garonne, habilité par l'État.",
-        "url": "https://www.soscartegrise.fr",
+        "url": "https://www.soscartegrise31.fr",
         "email": "soscartegrise31@hotmail.com",
         "telephone": ["+33581666900", "+33619923340"],
         "address": {
