@@ -4,10 +4,11 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import JsonLd from '@/components/JsonLd';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800', '900'],
+  weight: ['700', '800', '900'],
   variable: '--font-montserrat',
   display: 'swap',
 });
@@ -21,6 +22,9 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.soscartegrise31.fr'),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
     template: '%s | Soscartegrise',
@@ -36,11 +40,14 @@ export const metadata: Metadata = {
     'changement de titulaire carte grise',
     'duplicata carte grise',
     'carte grise étrangère France',
+    'carte grise Comminges',
+    'carte grise Occitanie',
   ],
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Soscartegrise',
+    url: 'https://www.soscartegrise31.fr',
     title: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
     description: "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Habilité par l'État, dossier traité en 10 minutes.",
     images: [{ url: '/og-image-soscartegrise31.png', width: 1200, height: 630, alt: 'Soscartegrise — Carte grise Saint-Gaudens' }],
@@ -52,7 +59,6 @@ export const metadata: Metadata = {
     images: ['/og-image-soscartegrise31.png'],
   },
   robots: { index: true, follow: true },
-  verification: { google: 'GOOGLE_SEARCH_CONSOLE_TOKEN' },
 };
 
 export default function RootLayout({
@@ -64,10 +70,21 @@ export default function RootLayout({
     <html lang="fr" className={`${montserrat.variable} ${openSans.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KTHH9NPZ');` }} />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KB3Z67M0P" />
-        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3KB3Z67M0P');` }} />
+        <link rel="preload" as="image" href="/enseigne.jpg" />
       </head>
       <body className="font-corps antialiased">
+        <JsonLd data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://www.soscartegrise31.fr/#website",
+          "name": "Soscartegrise",
+          "url": "https://www.soscartegrise31.fr",
+          "description": "Spécialiste carte grise habilité par l'État à Saint-Gaudens (31)",
+          "inLanguage": "fr-FR",
+          "publisher": {
+            "@id": "https://www.soscartegrise31.fr/#business"
+          }
+        }} />
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTHH9NPZ" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} />
         </noscript>

@@ -10,7 +10,8 @@ import CarteGriseAccordion from '@/components/CarteGriseAccordion';
 export const metadata: Metadata = {
   title: "Carte grise Saint-Gaudens — Toutes démarches | Soscartegrise",
   description: "Changement de titulaire, duplicata, changement d'adresse, carte grise étrangère... Soscartegrise traite tous vos dossiers en 10 minutes à Saint-Gaudens.",
-  keywords: 'carte grise Saint-Gaudens, changement titulaire, duplicata carte grise, carte grise 31, carte grise Haute-Garonne',
+  keywords: 'carte grise Saint-Gaudens, changement titulaire, duplicata carte grise, carte grise 31, carte grise Haute-Garonne, carte grise Comminges',
+  alternates: { canonical: '/carte-grise' },
   openGraph: {
     title: "Carte grise Saint-Gaudens — Toutes démarches | Soscartegrise",
     description: "Changement de titulaire, duplicata, changement d'adresse, carte grise étrangère à Saint-Gaudens.",
@@ -36,7 +37,7 @@ const atouts = [
   {
     icone: FiStar,
     titre: 'Note 5/5',
-    description: 'Nos clients nous font confiance — +10 avis Google vérifiés.',
+    description: 'Nos clients nous font confiance — 7 avis Google vérifiés.',
   },
 ];
 
@@ -45,35 +46,43 @@ export default function CarteGrisePage() {
     <>
       <JsonLd data={{
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Combien de temps pour obtenir ma carte grise à Saint-Gaudens ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Votre dossier est traité en moins de 10 minutes sur place. Le certificat provisoire arrive sous 48h à 72h." }
-          },
-          {
-            "@type": "Question",
-            "name": "Faut-il se déplacer en préfecture ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Non, Soscartegrise est habilité par l'État. Nous gérons toutes vos démarches sans passage en préfecture." }
-          },
-          {
-            "@type": "Question",
-            "name": "Quel est le prix du cheval fiscal en Occitanie ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Le prix du cheval fiscal en Occitanie est de 59,50 €." }
-          },
-          {
-            "@type": "Question",
-            "name": "Quels documents pour un changement de titulaire ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Certificat de cession, pièce d'identité, justificatif de domicile, contrôle technique de moins de 6 mois si le véhicule a plus de 4 ans." }
-          },
-          {
-            "@type": "Question",
-            "name": "Soscartegrise intervient-il uniquement à Saint-Gaudens ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Non, nous intervenons sur tout le département de la Haute-Garonne (31) et l'Occitanie, notamment à Toulouse, Saint-Gaudens, Muret et alentours." }
-          }
+        "@type": "Service",
+        "@id": "https://www.soscartegrise31.fr/carte-grise#service",
+        "name": "Service carte grise — certificat d'immatriculation",
+        "description": "Changement de titulaire, duplicata, changement d'adresse, carte grise étrangère. Dossier traité en 10 minutes à Saint-Gaudens. Habilité par l'État.",
+        "url": "https://www.soscartegrise31.fr/carte-grise",
+        "provider": {
+          "@id": "https://www.soscartegrise31.fr/#business"
+        },
+        "serviceType": "Certificat d'immatriculation",
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Haute-Garonne" },
+          { "@type": "AdministrativeArea", "name": "Occitanie" },
+          { "@type": "AdministrativeArea", "name": "Comminges" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Prestations carte grise",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Changement de titulaire" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Changement d'adresse" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Déclaration de cession" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Demande de duplicata" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Carte grise étrangère" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Immatriculation véhicule neuf" } }
+          ]
+        }
+      }} />
+
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.soscartegrise31.fr" },
+          { "@type": "ListItem", "position": 2, "name": "Carte grise", "item": "https://www.soscartegrise31.fr/carte-grise" }
         ]
       }} />
+
       <PageHero
         titre="Carte grise"
         sousTitre="Toutes vos démarches de certificat d'immatriculation, gérées sur place à Saint-Gaudens."
@@ -102,12 +111,13 @@ export default function CarteGrisePage() {
               Soscartegrise est un professionnel habilité par l&apos;État pour réaliser toutes vos
               démarches liées au certificat d&apos;immatriculation. Achat de véhicule, perte de carte
               grise, déménagement ou véhicule étranger — nous traitons votre dossier rapidement et
-              en toute sécurité.
+              en toute sécurité, à Saint-Gaudens, au cœur du Comminges en Haute-Garonne.
             </p>
             <p className="text-gray-600 leading-relaxed text-base">
               Plus besoin de vous battre avec les sites administratifs. Déposez votre dossier chez
               nous, nous nous occupons du reste. Vous recevez votre certificat d&apos;immatriculation
-              sous 48 à 72h.
+              sous 48 à 72h. Nous intervenons également pour les clients de Muret, Toulouse,
+              Saint-Girons et tout le département 31.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-2">
               <Link
@@ -130,7 +140,7 @@ export default function CarteGrisePage() {
           <div className="relative h-72 lg:h-[420px] rounded-3xl overflow-hidden shadow-xl">
             <Image
               src="/carte-grise-service.webp"
-              alt="Service carte grise Soscartegrise"
+              alt="Dossier de carte grise traité chez Soscartegrise, Saint-Gaudens (31)"
               fill
               className="object-cover"
             />

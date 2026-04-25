@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
 import { FiCheck, FiPhone } from 'react-icons/fi';
 import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
@@ -8,7 +9,8 @@ import SectionWrapper from '@/components/SectionWrapper';
 export const metadata: Metadata = {
   title: "Plaques d'immatriculation Saint-Gaudens | Soscartegrise",
   description: "Fabrication de plaques d'immatriculation aux normes SIV à Saint-Gaudens. Passez commande directement sur place chez Soscartegrise.",
-  keywords: "plaques immatriculation Saint-Gaudens, fabrication plaque SIV, plaque immatriculation 31",
+  keywords: "plaques immatriculation Saint-Gaudens, fabrication plaque SIV, plaque immatriculation 31, plaque immatriculation Haute-Garonne",
+  alternates: { canonical: '/plaques' },
   openGraph: {
     title: "Plaques d'immatriculation Saint-Gaudens | Soscartegrise",
     description: "Fabrication de plaques d'immatriculation aux normes SIV à Saint-Gaudens.",
@@ -45,6 +47,38 @@ const normes = [
 export default function PlaquesPage() {
   return (
     <>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://www.soscartegrise31.fr/plaques#service",
+        "name": "Fabrication de plaques d'immatriculation",
+        "description": "Fabrication de plaques d'immatriculation aux normes SIV sur place en 5 minutes. 25 € la paire, rivets offerts. Saint-Gaudens, Haute-Garonne.",
+        "url": "https://www.soscartegrise31.fr/plaques",
+        "provider": {
+          "@id": "https://www.soscartegrise31.fr/#business"
+        },
+        "serviceType": "Fabrication plaque d'immatriculation",
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Haute-Garonne" },
+          { "@type": "AdministrativeArea", "name": "Occitanie" }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "25",
+          "priceCurrency": "EUR",
+          "description": "Paire de plaques d'immatriculation homologuées, rivets offerts, fabrication en 5 minutes"
+        }
+      }} />
+
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.soscartegrise31.fr" },
+          { "@type": "ListItem", "position": 2, "name": "Plaques d'immatriculation", "item": "https://www.soscartegrise31.fr/plaques" }
+        ]
+      }} />
+
       <PageHero
         titre="Plaques d'immatriculation"
         sousTitre="Fabrication sur place, aux normes SIV, lors de votre visite pour votre carte grise."

@@ -6,7 +6,6 @@ import { FiShield, FiZap, FiCheckCircle, FiFileText, FiPhone, FiExternalLink, Fi
 import { FaHandshake } from 'react-icons/fa';
 import PointFortCard from '@/components/PointFortCard';
 import { FaStar } from 'react-icons/fa';
-import PrestationCard from '@/components/PrestationCard';
 import AvisCarrousel from '@/components/AvisCarrousel';
 import CTABanner from '@/components/CTABanner';
 import DocumentCard from '@/components/DocumentCard';
@@ -19,51 +18,13 @@ export const metadata: Metadata = {
   title: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
   description:
     "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Changement de titulaire, duplicata, carte grise étrangère. Évitez la préfecture, dossier traité en 10 minutes sur place.",
-  keywords: 'carte grise Saint-Gaudens, carte grise 31, carte grise Toulouse, certificat immatriculation Haute-Garonne, carte grise habilité état',
+  keywords: 'carte grise Saint-Gaudens, carte grise 31, carte grise Toulouse, certificat immatriculation Haute-Garonne, carte grise habilité état, carte grise Comminges',
+  alternates: { canonical: '/' },
   openGraph: {
     title: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
     description: "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Habilité par l'État.",
   },
 };
-
-const prestations = [
-  {
-    icone: '🔄',
-    titre: 'Changement de titulaire',
-    description: 'Achat ou vente d\'un véhicule ? Nous gérons le transfert de carte grise en toute simplicité.',
-    href: '/prestations#changement-titulaire',
-  },
-  {
-    icone: '📍',
-    titre: 'Changement d\'adresse',
-    description: 'Vous avez déménagé ? Mettez à jour votre carte grise rapidement.',
-    href: '/prestations#changement-adresse',
-  },
-  {
-    icone: '📋',
-    titre: 'Déclaration de cession',
-    description: 'Protégez-vous lors de la vente de votre véhicule avec notre service de déclaration.',
-    href: '/prestations#declaration-cession',
-  },
-  {
-    icone: '🔁',
-    titre: 'Demande de duplicata',
-    description: 'Carte grise perdue, volée ou détériorée ? Nous traitons votre demande en urgence.',
-    href: '/prestations#duplicata',
-  },
-  {
-    icone: '🌍',
-    titre: 'Carte grise étrangère',
-    description: 'Immatriculation de véhicule étranger en France, nous vous guidons pas à pas.',
-    href: '/prestations#carte-grise-etrangere',
-  },
-  {
-    icone: '🪪',
-    titre: 'Démarches permis de conduire',
-    description: 'Renouvellement, échange de permis étranger, perte ou vol — nous prenons en charge.',
-    href: '/prestations#permis-conduire',
-  },
-];
 
 const pointsForts = [
   {
@@ -114,10 +75,13 @@ export default function HomePage() {
     <>
       <JsonLd data={{
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@id": "https://www.soscartegrise31.fr/#business",
         "name": "Soscartegrise",
         "description": "Spécialiste de la carte grise à Saint-Gaudens et en Haute-Garonne, habilité par l'État.",
         "url": "https://www.soscartegrise31.fr",
+        "logo": "https://www.soscartegrise31.fr/logo.png",
+        "image": "https://www.soscartegrise31.fr/og-image-soscartegrise31.png",
         "email": "soscartegrise31@hotmail.com",
         "telephone": ["+33581666900", "+33619923340"],
         "address": {
@@ -137,15 +101,25 @@ export default function HomePage() {
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"], "opens": "14:00", "closes": "17:00" },
           { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "08:30", "closes": "12:00" }
         ],
-        "areaServed": ["Saint-Gaudens", "Toulouse", "Haute-Garonne", "Occitanie"],
+        "areaServed": [
+          { "@type": "City", "name": "Saint-Gaudens" },
+          { "@type": "City", "name": "Toulouse" },
+          { "@type": "City", "name": "Muret" },
+          { "@type": "City", "name": "Saint-Girons" },
+          { "@type": "AdministrativeArea", "name": "Haute-Garonne" },
+          { "@type": "AdministrativeArea", "name": "Occitanie" },
+          { "@type": "AdministrativeArea", "name": "Comminges" }
+        ],
         "priceRange": "€€",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "5",
-          "reviewCount": "10",
-          "bestRating": "5"
+          "reviewCount": 7,
+          "bestRating": "5",
+          "worstRating": "1"
         }
       }} />
+
       {/* ===== SECTION 1 — HERO ===== */}
       <section className="relative min-h-[92vh] flex items-end overflow-hidden">
         {/* Background photo */}
@@ -241,6 +215,11 @@ export default function HomePage() {
               agréé par l&apos;État, nous traitons votre dossier immédiatement, sur place pour que
               vous receviez votre certificat d&apos;immatriculation dans les meilleurs délais.
             </p>
+            <p className="text-gray-600 leading-relaxed">
+              Basés au <strong>17 Boulevard Charles de Gaulle, 31800 Saint-Gaudens</strong>, nous
+              accompagnons les habitants du Comminges, de la Haute-Garonne et de toute l&apos;Occitanie
+              dans leurs démarches administratives liées au véhicule.
+            </p>
             <Link
               href="/contact"
               className="self-start bg-rouge text-white font-titre font-bold px-7 py-3.5 rounded-full hover:bg-red-700 transition-colors duration-200"
@@ -251,7 +230,7 @@ export default function HomePage() {
           <div className="relative h-80 lg:h-[420px] rounded-3xl overflow-hidden shadow-2xl">
             <Image
               src="/carte-grise-presentation.webp"
-              alt="Soscartegrise — Spécialiste carte grise à Saint-Gaudens"
+              alt="Soscartegrise — Spécialiste carte grise à Saint-Gaudens, Haute-Garonne"
               fill
               className="object-cover"
             />
@@ -292,14 +271,6 @@ export default function HomePage() {
               texteHover="Besoin de nouvelles plaques ? SOS Carte Grise fabrique vos plaques d'immatriculation sur place, aux normes en vigueur et prêtes en quelques minutes. Que ce soit pour un changement, une perte ou une plaque endommagée, nous vous garantissons un service rapide, homologué et de qualité. Voiture, utilitaire : vos plaques sont prêtes à poser en un rien de temps !"
               href="/plaques"
             />
-          </div>
-          <div className="text-center mt-10">
-            <Link
-              href="/prestations"
-              className="inline-block bg-bleu text-white font-titre font-bold px-8 py-3.5 rounded-full hover:bg-blue-800 transition-colors duration-200"
-            >
-              Voir toutes nos prestations
-            </Link>
           </div>
         </div>
       </SectionWrapper>
@@ -454,7 +425,7 @@ export default function HomePage() {
                 ))}
               </div>
               <span className="font-titre font-bold text-gray-900 text-xl">5/5</span>
-              <span className="text-gray-500 text-sm">— basée sur +10 avis Google</span>
+              <span className="text-gray-500 text-sm">— basée sur 7 avis Google</span>
             </div>
           </div>
           <AvisCarrousel />

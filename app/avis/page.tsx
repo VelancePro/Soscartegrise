@@ -1,13 +1,15 @@
 import type { Metadata } from 'next';
 import { FaStar, FaGoogle } from 'react-icons/fa';
-import { FiCheckCircle } from 'react-icons/fi';
+import { FiCheckCircle, FiExternalLink } from 'react-icons/fi';
 import PageHero from '@/components/PageHero';
 import CTABanner from '@/components/CTABanner';
 import SectionWrapper from '@/components/SectionWrapper';
+import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: "Avis clients Soscartegrise — 5/5 sur Google | Saint-Gaudens",
   description: "Découvrez les avis de nos clients satisfaits. Soscartegrise, spécialiste carte grise à Saint-Gaudens, 5/5 sur Google.",
+  alternates: { canonical: '/avis' },
   openGraph: {
     title: "Avis clients Soscartegrise — 5/5 sur Google | Saint-Gaudens",
     description: "Soscartegrise, spécialiste carte grise à Saint-Gaudens, 5/5 sur Google.",
@@ -76,6 +78,73 @@ function StarRating({ note }: { note: number }) {
 export default function AvisPage() {
   return (
     <>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.soscartegrise31.fr/#business",
+        "name": "Soscartegrise",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": 7,
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Hugo Métivier" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "SIMPLE, RAPIDE et EFFICACE ! A partir du moment où votre dossier est complet, la carte grise arrive chez vous sous 48h à 72h. J'ai fais 2 cartes grises chez eux sans aucun accroc."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Patrick Ferdinand" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Patricia est non seulement charmante, mais très efficace, même dans des cas difficiles comme j'ai pu en connaître avec deux véhicules. Une super solution quand on ne veut pas se prendre la tête avec l'Administration."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Yann Casse" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Rapide, efficace, professionnel, et sympathique — que demander de plus."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Stéphane Leclair" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "La demoiselle a toujours le sourire agréable, vous aide dans les démarches. J'ai eu à faire plusieurs à ces services et toujours aussi gentil."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Emilie R." },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Professionnelle et très aimable. Rien à dire. Je recommande."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Fred" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Très bien pour faire sa carte grise rapidement."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Said Aouam" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Positif — Ponctualité, Qualité, Professionnalisme, Prix."
+          }
+        ]
+      }} />
+
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.soscartegrise31.fr" },
+          { "@type": "ListItem", "position": 2, "name": "Avis clients", "item": "https://www.soscartegrise31.fr/avis" }
+        ]
+      }} />
+
       <PageHero
         titre="Avis clients"
         sousTitre="Ce que disent nos clients sur notre service de carte grise à Saint-Gaudens."
@@ -101,13 +170,23 @@ export default function AvisPage() {
               <span className="font-titre font-extrabold text-gray-900 text-6xl">5</span>
               <span className="text-gray-500 text-xl">/5</span>
             </div>
-            <p className="text-gray-500">Basé sur +10 avis clients Google</p>
+            <p className="text-gray-500">Basé sur 7 avis clients Google</p>
           </div>
 
           <div className="flex items-center gap-2 text-gray-500 text-sm">
             <FaGoogle className="text-blue-500" size={18} />
             <span>Avis vérifiés sur Google My Business</span>
           </div>
+
+          <a
+            href="https://share.google/DJ0en1qq93ESjgewW"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-bleu text-white font-titre font-semibold px-6 py-3 rounded-full hover:bg-blue-800 transition-colors duration-200 text-sm"
+          >
+            <FiExternalLink size={15} />
+            Laisser un avis sur Google
+          </a>
         </div>
       </SectionWrapper>
 
@@ -115,7 +194,7 @@ export default function AvisPage() {
       <SectionWrapper className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-titre font-extrabold text-gray-900 text-2xl md:text-3xl text-center mb-10">
-            Tous les avis
+            Avis clients — Service carte grise à Saint-Gaudens
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {tousLesAvis.map((avis, index) => (
