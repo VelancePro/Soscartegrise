@@ -59,6 +59,12 @@ const tousLesAvis: AvisClient[] = [
     texte: 'Positif — Ponctualité, Qualité, Professionnalisme, Prix.',
     note: 5,
   },
+  {
+    nom: 'Yannick Astrie',
+    texte: 'Je remercie Patricia pour son efficacité lors de la création de mes nouvelles plaques d\'immatriculation. Je recommande !',
+    note: 5,
+    date: 'Avril 2025',
+  },
 ];
 
 function StarRating({ note }: { note: number }) {
@@ -86,7 +92,7 @@ export default function AvisPage() {
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "5",
-          "reviewCount": 7,
+          "reviewCount": 8,
           "bestRating": "5",
           "worstRating": "1"
         },
@@ -132,6 +138,13 @@ export default function AvisPage() {
             "author": { "@type": "Person", "name": "Said Aouam" },
             "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
             "reviewBody": "Positif — Ponctualité, Qualité, Professionnalisme, Prix."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Yannick Astrie" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Je remercie Patricia pour son efficacité lors de la création de mes nouvelles plaques d'immatriculation. Je recommande !",
+            "datePublished": "2025-04"
           }
         ]
       }} />
@@ -170,7 +183,7 @@ export default function AvisPage() {
               <span className="font-titre font-extrabold text-gray-900 text-6xl">5</span>
               <span className="text-gray-500 text-xl">/5</span>
             </div>
-            <p className="text-gray-500">Basé sur 7 avis clients Google</p>
+            <p className="text-gray-500">Basé sur 8 avis clients Google</p>
           </div>
 
           <div className="flex items-center gap-2 text-gray-500 text-sm">
@@ -179,7 +192,7 @@ export default function AvisPage() {
           </div>
 
           <a
-            href="https://share.google/DJ0en1qq93ESjgewW"
+            href="https://www.google.com/search?sca_esv=a5ad54a154ad8b44&rlz=1C1VDKB_frFR929FR929&hl=fr-FR&biw=1470&bih=835&sxsrf=ANbL-n5Bc6c0jOklLCAXxmMWygOxDo30Qg:1777102029382&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOR_DHXFM5VuQ5Rx264bVotJQMVnB2taX4sy9XIqtP577zq0v7VGDeuK9cVNJjWyHdeVrDPN8eouKEQhCT2oJOQUTaIvx&q=SOS+CARTE+GRISE+Avis&sa=X&ved=2ahUKEwjYnsP5vIiUAxXIeqQEHW3yDD8Q0bkNegQILxAH"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-bleu text-white font-titre font-semibold px-6 py-3 rounded-full hover:bg-blue-800 transition-colors duration-200 text-sm"

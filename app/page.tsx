@@ -114,7 +114,7 @@ export default function HomePage() {
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "5",
-          "reviewCount": 7,
+          "reviewCount": 8,
           "bestRating": "5",
           "worstRating": "1"
         }
@@ -425,7 +425,7 @@ export default function HomePage() {
                 ))}
               </div>
               <span className="font-titre font-bold text-gray-900 text-xl">5/5</span>
-              <span className="text-gray-500 text-sm">— basée sur 7 avis Google</span>
+              <span className="text-gray-500 text-sm">— basée sur 8 avis Google</span>
             </div>
           </div>
           <AvisCarrousel />

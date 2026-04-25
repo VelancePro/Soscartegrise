@@ -44,6 +44,11 @@ const avis: Avis[] = [
     texte: 'Positif — Ponctualité, Qualité, Professionnalisme, Prix.',
     note: 5,
   },
+  {
+    nom: 'Yannick Astrie',
+    texte: 'Je remercie Patricia pour son efficacité lors de la création de mes nouvelles plaques d\'immatriculation. Je recommande !',
+    note: 5,
+  },
 ];
 
 function StarRating() {
