@@ -217,7 +217,7 @@ const services: Service[] = [
 ];
 
 export default function CarteGriseAccordion() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const hash = window.location.hash.replace('#', '');
