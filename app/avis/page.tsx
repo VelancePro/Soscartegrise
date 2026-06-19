@@ -65,6 +65,16 @@ const tousLesAvis: AvisClient[] = [
     note: 5,
     date: 'Avril 2025',
   },
+  {
+    nom: 'Jennifer',
+    texte: 'Super, très professionnel je recommande vivement.',
+    note: 5,
+  },
+  {
+    nom: 'Yassine Rhouma',
+    texte: 'Merci à SOS Carte Grise pour leur rapidité et réactivité.',
+    note: 5,
+  },
 ];
 
 function StarRating({ note }: { note: number }) {
@@ -92,7 +102,7 @@ export default function AvisPage() {
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "5",
-          "reviewCount": 8,
+          "reviewCount": 10,
           "bestRating": "5",
           "worstRating": "1"
         },
@@ -145,6 +155,18 @@ export default function AvisPage() {
             "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
             "reviewBody": "Je remercie Patricia pour son efficacité lors de la création de mes nouvelles plaques d'immatriculation. Je recommande !",
             "datePublished": "2025-04"
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Jennifer" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Super, très professionnel je recommande vivement."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Yassine Rhouma" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Merci à SOS Carte Grise pour leur rapidité et réactivité."
           }
         ]
       }} />
@@ -183,7 +205,7 @@ export default function AvisPage() {
               <span className="font-titre font-extrabold text-gray-900 text-6xl">5</span>
               <span className="text-gray-500 text-xl">/5</span>
             </div>
-            <p className="text-gray-500">Basé sur 8 avis clients Google</p>
+            <p className="text-gray-500">Basé sur 10 avis clients Google</p>
           </div>
 
           <div className="flex items-center gap-2 text-gray-500 text-sm">

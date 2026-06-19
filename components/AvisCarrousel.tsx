@@ -49,6 +49,16 @@ const avis: Avis[] = [
     texte: 'Je remercie Patricia pour son efficacité lors de la création de mes nouvelles plaques d\'immatriculation. Je recommande !',
     note: 5,
   },
+  {
+    nom: 'Jennifer',
+    texte: 'Super, très professionnel je recommande vivement.',
+    note: 5,
+  },
+  {
+    nom: 'Yassine Rhouma',
+    texte: 'Merci à SOS Carte Grise pour leur rapidité et réactivité.',
+    note: 5,
+  },
 ];
 
 function StarRating() {
