@@ -425,7 +425,7 @@ export default function HomePage() {
                 ))}
               </div>
               <span className="font-titre font-bold text-gray-900 text-xl">5/5</span>
-              <span className="text-gray-500 text-sm">- basée sur 10 avis Google</span>
+              <span className="text-gray-500 text-sm">- basée sur +10 avis Google</span>
             </div>
           </div>
           <AvisCarrousel />

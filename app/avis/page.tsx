@@ -205,7 +205,7 @@ export default function AvisPage() {
               <span className="font-titre font-extrabold text-gray-900 text-6xl">5</span>
               <span className="text-gray-500 text-xl">/5</span>
             </div>
-            <p className="text-gray-500">Basé sur 10 avis clients Google</p>
+            <p className="text-gray-500">Basé sur +10 avis clients Google</p>
           </div>
 
           <div className="flex items-center gap-2 text-gray-500 text-sm">
