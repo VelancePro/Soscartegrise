@@ -8,12 +8,12 @@ import SectionWrapper from '@/components/SectionWrapper';
 import CarteGriseAccordion from '@/components/CarteGriseAccordion';
 
 export const metadata: Metadata = {
-  title: "Carte grise Saint-Gaudens — Toutes démarches | Soscartegrise",
+  title: "Carte grise Saint-Gaudens - Toutes démarches | Soscartegrise",
   description: "Changement de titulaire, duplicata, changement d'adresse, carte grise étrangère... Soscartegrise traite tous vos dossiers en 10 minutes à Saint-Gaudens.",
   keywords: 'carte grise Saint-Gaudens, changement titulaire, duplicata carte grise, carte grise 31, carte grise Haute-Garonne, carte grise Comminges',
   alternates: { canonical: '/carte-grise' },
   openGraph: {
-    title: "Carte grise Saint-Gaudens — Toutes démarches | Soscartegrise",
+    title: "Carte grise Saint-Gaudens - Toutes démarches | Soscartegrise",
     description: "Changement de titulaire, duplicata, changement d'adresse, carte grise étrangère à Saint-Gaudens.",
   },
 };
@@ -37,7 +37,7 @@ const atouts = [
   {
     icone: FiStar,
     titre: 'Note 5/5',
-    description: 'Nos clients nous font confiance — 7 avis Google vérifiés.',
+    description: 'Nos clients nous font confiance - 7 avis Google vérifiés.',
   },
 ];
 
@@ -48,7 +48,7 @@ export default function CarteGrisePage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "@id": "https://www.soscartegrise31.fr/carte-grise#service",
-        "name": "Service carte grise — certificat d'immatriculation",
+        "name": "Service carte grise - certificat d'immatriculation",
         "description": "Changement de titulaire, duplicata, changement d'adresse, carte grise étrangère. Dossier traité en 10 minutes à Saint-Gaudens. Habilité par l'État.",
         "url": "https://www.soscartegrise31.fr/carte-grise",
         "provider": {
@@ -110,7 +110,7 @@ export default function CarteGrisePage() {
             <p className="text-gray-600 leading-relaxed text-base">
               Soscartegrise est un professionnel habilité par l&apos;État pour réaliser toutes vos
               démarches liées au certificat d&apos;immatriculation. Achat de véhicule, perte de carte
-              grise, déménagement ou véhicule étranger — nous traitons votre dossier rapidement et
+              grise, déménagement ou véhicule étranger - nous traitons votre dossier rapidement et
               en toute sécurité, à Saint-Gaudens, au cœur du Comminges en Haute-Garonne.
             </p>
             <p className="text-gray-600 leading-relaxed text-base">

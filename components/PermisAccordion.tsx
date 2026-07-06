@@ -34,7 +34,7 @@ const sections: Section[] = [
       { texte: "Si votre permis est soumis à une visite médicale (situation handicap, catégorie lourde, permis professionnel…) : un avis médical (cerfa 14880)" },
       { texte: "Si vous êtes mineur : justificatif de domicile au nom du responsable légal + attestation d'hébergement sur l'honneur datée et signée + pièce d'identité du responsable légal en cours de validité" },
       {
-        texte: "Cas particulier — Personne hébergée chez un particulier :",
+        texte: "Cas particulier - Personne hébergée chez un particulier :",
         isCasParticulier: true,
         sousItems: [
           "Une attestation sur l'honneur de la personne qui héberge en original et co-signée par l'hébergé",
@@ -58,7 +58,7 @@ const sections: Section[] = [
       { texte: "En cas de vol : récépissé de la déclaration de vol du permis de conduire (à effectuer en commissariat ou en gendarmerie)" },
       { texte: "En cas de détérioration : permis de conduire détérioré" },
       {
-        texte: "Cas particulier — Personne hébergée chez un particulier :",
+        texte: "Cas particulier - Personne hébergée chez un particulier :",
         isCasParticulier: true,
         sousItems: [
           "Une attestation sur l'honneur de la personne qui héberge en original et co-signée par l'hébergé",
@@ -82,7 +82,7 @@ const sections: Section[] = [
       { texte: "En cas de divorce : jugement de divorce ou convention de divorce enregistré par un notaire. Vous pouvez demander un nouveau permis si votre nom d'usage figurait sur votre permis et que vous souhaitez que seul votre nom de famille y figure." },
       { texte: "En cas de changement de nom ou de prénom : justificatif de changement de nom ou de prénom. Vous pouvez demander un nouveau permis si vous changez d'état civil et que le nom de famille figurant sur votre permis n'est plus le bon." },
       {
-        texte: "Cas particulier — Personne hébergée chez un particulier :",
+        texte: "Cas particulier - Personne hébergée chez un particulier :",
         isCasParticulier: true,
         sousItems: [
           "Une attestation sur l'honneur de la personne qui héberge en original et co-signée par l'hébergé",
@@ -106,7 +106,7 @@ const sections: Section[] = [
       { texte: "Si vous ne souhaitez pas renouveler les catégories lourdes de votre permis de conduire, remplacez l'avis médical par une attestation de renonciation aux catégories lourdes" },
       { texte: "Si vous êtes mineur : justificatif de domicile au nom du responsable légal + attestation d'hébergement sur l'honneur datée et signée + pièce d'identité du responsable légal en cours de validité" },
       {
-        texte: "Cas particulier — Personne hébergée chez un particulier :",
+        texte: "Cas particulier - Personne hébergée chez un particulier :",
         isCasParticulier: true,
         sousItems: [
           "Une attestation sur l'honneur de la personne qui héberge en original et co-signée par l'hébergé",
@@ -129,7 +129,7 @@ const sections: Section[] = [
       { texte: "Si votre permis est soumis à une visite médicale (situation handicap, catégorie lourde, permis professionnel…) : un avis médical (cerfa 14880)" },
       { texte: "Si vous êtes mineur : justificatif de domicile au nom du responsable légal + attestation d'hébergement sur l'honneur datée et signée + pièce d'identité du responsable légal en cours de validité" },
       {
-        texte: "Cas particulier — Personne hébergée chez un particulier :",
+        texte: "Cas particulier - Personne hébergée chez un particulier :",
         isCasParticulier: true,
         sousItems: [
           "Une attestation sur l'honneur de la personne qui héberge en original et co-signée par l'hébergé",
@@ -219,7 +219,7 @@ export default function PermisAccordion() {
                           <ul className="flex flex-col gap-2">
                             {doc.sousItems?.map((sub, k) => (
                               <li key={k} className="flex items-start gap-2 text-gray-600 text-sm">
-                                <span className="text-bleu mt-0.5 flex-shrink-0">—</span>
+                                <span className="text-bleu mt-0.5 flex-shrink-0">-</span>
                                 <span>{sub}</span>
                               </li>
                             ))}

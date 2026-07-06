@@ -21,7 +21,7 @@ const avis: Avis[] = [
   },
   {
     nom: 'Yann Casse',
-    texte: 'Rapide, efficace, professionnel, et sympathique — que demander de plus.',
+    texte: 'Rapide, efficace, professionnel, et sympathique - que demander de plus.',
     note: 5,
   },
   {
@@ -41,7 +41,7 @@ const avis: Avis[] = [
   },
   {
     nom: 'Said Aouam',
-    texte: 'Positif — Ponctualité, Qualité, Professionnalisme, Prix.',
+    texte: 'Positif : Ponctualité, Qualité, Professionnalisme, Prix.',
     note: 5,
   },
   {

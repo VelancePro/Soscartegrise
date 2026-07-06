@@ -8,12 +8,12 @@ import SectionWrapper from '@/components/SectionWrapper';
 import PermisAccordion from '@/components/PermisAccordion';
 
 export const metadata: Metadata = {
-  title: "Permis de conduire Saint-Gaudens — Renouvellement & démarches | Soscartegrise",
+  title: "Permis de conduire Saint-Gaudens - Renouvellement & démarches | Soscartegrise",
   description: "Renouvellement de permis, échange de permis étranger, duplicata. Soscartegrise vous accompagne dans toutes vos démarches permis à Saint-Gaudens.",
   keywords: 'renouvellement permis de conduire, permis de conduire Saint-Gaudens, duplicata permis, permis étranger France, permis conduire Haute-Garonne',
   alternates: { canonical: '/permis-conduire' },
   openGraph: {
-    title: "Permis de conduire Saint-Gaudens — Renouvellement & démarches | Soscartegrise",
+    title: "Permis de conduire Saint-Gaudens - Renouvellement & démarches | Soscartegrise",
     description: "Renouvellement de permis, échange de permis étranger, duplicata à Saint-Gaudens.",
   },
 };
@@ -70,7 +70,7 @@ const engagements = [
   {
     icone: FiClock,
     titre: 'Gain de temps',
-    description: "Plus de stress ni de paperasse inutile — on s'occupe de tout.",
+    description: "Plus de stress ni de paperasse inutile - on s'occupe de tout.",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function PermisConduitePage() {
         "@context": "https://schema.org",
         "@type": "Service",
         "@id": "https://www.soscartegrise31.fr/permis-conduire#service",
-        "name": "Démarches permis de conduire — renouvellement, duplicata, échange",
+        "name": "Démarches permis de conduire - renouvellement, duplicata, échange",
         "description": "Renouvellement, duplicata, échange de permis étranger, première demande. Service habilité par l'État à Saint-Gaudens, Haute-Garonne.",
         "url": "https://www.soscartegrise31.fr/permis-conduire",
         "provider": {
@@ -142,7 +142,7 @@ export default function PermisConduitePage() {
             <p className="text-gray-600 leading-relaxed text-base">
               Soscartegrise est habilité par l&apos;État pour réaliser toutes vos démarches liées
               au permis de conduire à Saint-Gaudens, en Haute-Garonne. Renouvellement, duplicata,
-              échange de permis étranger ou première demande — nous traitons votre dossier rapidement,
+              échange de permis étranger ou première demande - nous traitons votre dossier rapidement,
               sans passage en préfecture.
             </p>
             <p className="text-gray-600 leading-relaxed text-base">
@@ -171,7 +171,7 @@ export default function PermisConduitePage() {
           <div className="relative h-72 lg:h-[420px] rounded-3xl overflow-hidden shadow-xl">
             <Image
               src="/permis-conduire-service.webp"
-              alt="Renouvellement de permis de conduire à Saint-Gaudens — Soscartegrise"
+              alt="Renouvellement de permis de conduire à Saint-Gaudens - Soscartegrise"
               fill
               className="object-cover"
             />

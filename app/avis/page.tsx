@@ -7,11 +7,11 @@ import SectionWrapper from '@/components/SectionWrapper';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: "Avis clients Soscartegrise — 5/5 sur Google | Saint-Gaudens",
+  title: "Avis clients Soscartegrise - 5/5 sur Google | Saint-Gaudens",
   description: "Découvrez les avis de nos clients satisfaits. Soscartegrise, spécialiste carte grise à Saint-Gaudens, 5/5 sur Google.",
   alternates: { canonical: '/avis' },
   openGraph: {
-    title: "Avis clients Soscartegrise — 5/5 sur Google | Saint-Gaudens",
+    title: "Avis clients Soscartegrise - 5/5 sur Google | Saint-Gaudens",
     description: "Soscartegrise, spécialiste carte grise à Saint-Gaudens, 5/5 sur Google.",
   },
 };
@@ -36,7 +36,7 @@ const tousLesAvis: AvisClient[] = [
   },
   {
     nom: 'Yann Casse',
-    texte: 'Rapide, efficace, professionnel, et sympathique — que demander de plus.',
+    texte: 'Rapide, efficace, professionnel, et sympathique - que demander de plus.',
     note: 5,
   },
   {
@@ -56,7 +56,7 @@ const tousLesAvis: AvisClient[] = [
   },
   {
     nom: 'Said Aouam',
-    texte: 'Positif — Ponctualité, Qualité, Professionnalisme, Prix.',
+    texte: 'Positif : Ponctualité, Qualité, Professionnalisme, Prix.',
     note: 5,
   },
   {
@@ -123,7 +123,7 @@ export default function AvisPage() {
             "@type": "Review",
             "author": { "@type": "Person", "name": "Yann Casse" },
             "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "reviewBody": "Rapide, efficace, professionnel, et sympathique — que demander de plus."
+            "reviewBody": "Rapide, efficace, professionnel, et sympathique - que demander de plus."
           },
           {
             "@type": "Review",
@@ -147,7 +147,7 @@ export default function AvisPage() {
             "@type": "Review",
             "author": { "@type": "Person", "name": "Said Aouam" },
             "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "reviewBody": "Positif — Ponctualité, Qualité, Professionnalisme, Prix."
+            "reviewBody": "Positif : Ponctualité, Qualité, Professionnalisme, Prix."
           },
           {
             "@type": "Review",
@@ -229,7 +229,7 @@ export default function AvisPage() {
       <SectionWrapper className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-titre font-extrabold text-gray-900 text-2xl md:text-3xl text-center mb-10">
-            Avis clients — Service carte grise à Saint-Gaudens
+            Avis clients - Service carte grise à Saint-Gaudens
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {tousLesAvis.map((avis, index) => (

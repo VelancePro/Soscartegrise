@@ -4,7 +4,7 @@ import SectionWrapper from '@/components/SectionWrapper';
 
 export const metadata: Metadata = {
   title: "Politique de confidentialité | Soscartegrise",
-  description: "Politique de confidentialité de Soscartegrise — RGPD, collecte et utilisation des données personnelles.",
+  description: "Politique de confidentialité de Soscartegrise - RGPD, collecte et utilisation des données personnelles.",
   robots: { index: false, follow: false },
 };
 
@@ -15,11 +15,11 @@ const sections = [
       <div className="flex flex-col gap-2 text-gray-600 text-sm leading-relaxed">
         <ul className="flex flex-col gap-1.5">
           <li><span className="text-gray-400">Site web :</span> <strong>www.soscartegrise31.fr</strong></li>
-          <li><span className="text-gray-400">Propriétaire :</span> Soscartegrise — 17 Boulevard Charles de Gaulle, 31800 Saint-Gaudens</li>
-          <li><span className="text-gray-400">Créateur :</span> Velance — <a href="https://velance.fr" target="_blank" rel="noopener noreferrer" className="text-bleu hover:text-rouge transition-colors">velance.fr</a></li>
-          <li><span className="text-gray-400">Responsable de publication :</span> Soscartegrise — 05 81 666 900</li>
-          <li><span className="text-gray-400">Webmaster :</span> Velance — 07 72 09 10 79</li>
-          <li><span className="text-gray-400">Hébergeur :</span> Vercel Inc. — 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis</li>
+          <li><span className="text-gray-400">Propriétaire :</span> Soscartegrise - 17 Boulevard Charles de Gaulle, 31800 Saint-Gaudens</li>
+          <li><span className="text-gray-400">Créateur :</span> Velance - <a href="https://velance.fr" target="_blank" rel="noopener noreferrer" className="text-bleu hover:text-rouge transition-colors">velance.fr</a></li>
+          <li><span className="text-gray-400">Responsable de publication :</span> Soscartegrise - 05 81 666 900</li>
+          <li><span className="text-gray-400">Webmaster :</span> Velance - 07 72 09 10 79</li>
+          <li><span className="text-gray-400">Hébergeur :</span> Vercel Inc. - 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis</li>
         </ul>
       </div>
     ),
@@ -77,12 +77,12 @@ const sections = [
           Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez des droits suivants sur vos données personnelles :
         </p>
         <ul className="flex flex-col gap-1.5 ml-4">
-          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">—</span> Droit d&apos;accès à vos données</li>
-          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">—</span> Droit de rectification en cas d&apos;inexactitude</li>
-          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">—</span> Droit à l&apos;effacement (droit à l&apos;oubli)</li>
-          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">—</span> Droit à la limitation du traitement</li>
-          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">—</span> Droit à la portabilité de vos données</li>
-          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">—</span> Droit d&apos;opposition au traitement</li>
+          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">-</span> Droit d&apos;accès à vos données</li>
+          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">-</span> Droit de rectification en cas d&apos;inexactitude</li>
+          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">-</span> Droit à l&apos;effacement (droit à l&apos;oubli)</li>
+          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">-</span> Droit à la limitation du traitement</li>
+          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">-</span> Droit à la portabilité de vos données</li>
+          <li className="flex items-start gap-2"><span className="text-bleu mt-0.5">-</span> Droit d&apos;opposition au traitement</li>
         </ul>
         <p>
           Pour exercer ces droits, vous pouvez nous contacter par email à <a href="mailto:soscartegrise31@hotmail.com" className="text-bleu hover:text-rouge transition-colors">soscartegrise31@hotmail.com</a> ou par courrier à l&apos;adresse : 17 Boulevard Charles de Gaulle, 31800 Saint-Gaudens.
@@ -116,7 +116,7 @@ export default function PolitiqueConfidentialitePage() {
     <>
       <PageHero
         titre="Politique de confidentialité"
-        sousTitre="Protection de vos données personnelles — RGPD et loi Informatique et Libertés."
+        sousTitre="Protection de vos données personnelles - RGPD et loi Informatique et Libertés."
         breadcrumb={[
           { label: 'Accueil', href: '/' },
           { label: 'Politique de confidentialité' },

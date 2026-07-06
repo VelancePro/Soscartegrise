@@ -5,7 +5,7 @@ import SectionWrapper from '@/components/SectionWrapper';
 
 export const metadata: Metadata = {
   title: "Mentions légales | Soscartegrise",
-  description: "Mentions légales du site Soscartegrise — informations légales, hébergement, propriété intellectuelle et données personnelles.",
+  description: "Mentions légales du site Soscartegrise - informations légales, hébergement, propriété intellectuelle et données personnelles.",
   robots: { index: false, follow: false },
 };
 
@@ -32,7 +32,7 @@ const sections = [
         <p>Le site est conçu par <strong>Velance</strong>, société par actions simplifiée (SAS) au capital de 800,00 €.</p>
         <ul className="flex flex-col gap-1 mt-2">
           <li><span className="text-gray-400">Adresse :</span> 34 Route d&apos;Albi, 31240 Saint-Jean</li>
-          <li><span className="text-gray-400">RCS :</span> TOULOUSE — NAF 6201Z</li>
+          <li><span className="text-gray-400">RCS :</span> TOULOUSE - NAF 6201Z</li>
           <li><span className="text-gray-400">Téléphone :</span> 07 72 09 10 79</li>
           <li><span className="text-gray-400">Site :</span> <a href="https://velance.fr" target="_blank" rel="noopener noreferrer" className="text-bleu hover:text-rouge transition-colors">velance.fr</a></li>
         </ul>

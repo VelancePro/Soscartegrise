@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   title: {
-    default: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
+    default: 'Carte grise à Saint-Gaudens | Soscartegrise - Habilité État',
     template: '%s | Soscartegrise',
   },
   description:
-    "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Changement de titulaire, duplicata, carte grise étrangère. Évitez la préfecture, dossier traité en 10 minutes sur place.",
+    "Carte grise à Saint-Gaudens (31) : changement de titulaire, duplicata, véhicule étranger. Habilité par l'État, dossier traité en 10 min sur place. 06 19 92 33 40.",
   keywords: [
     'carte grise Saint-Gaudens',
     'carte grise 31',
@@ -48,14 +48,14 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     siteName: 'Soscartegrise',
     url: 'https://www.soscartegrise31.fr',
-    title: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
-    description: "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Habilité par l'État, dossier traité en 10 minutes.",
-    images: [{ url: '/og-image-soscartegrise31.png', width: 1200, height: 630, alt: 'Soscartegrise — Carte grise Saint-Gaudens' }],
+    title: 'Carte grise à Saint-Gaudens | Soscartegrise - Habilité État',
+    description: "Carte grise à Saint-Gaudens (31), habilité par l'État. Changement de titulaire, duplicata, véhicule étranger. Dossier traité en 10 min sur place.",
+    images: [{ url: '/og-image-soscartegrise31.png', width: 1200, height: 630, alt: 'Soscartegrise - Carte grise Saint-Gaudens' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Carte grise à Saint-Gaudens | Soscartegrise',
-    description: "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Habilité par l'État.",
+    description: "Carte grise à Saint-Gaudens (31), habilité par l'État. Dossier traité en 10 min sur place.",
     images: ['/og-image-soscartegrise31.png'],
   },
   robots: { index: true, follow: true },

@@ -110,7 +110,7 @@ export default function Header() {
                 Accueil
               </Link>
 
-              {/* Carte grise — dropdown */}
+              {/* Carte grise - dropdown */}
               <div
                 ref={carteGriseRef}
                 className="relative"
@@ -150,7 +150,7 @@ export default function Header() {
                 )}
               </div>
 
-              {/* Permis de conduire — dropdown */}
+              {/* Permis de conduire - dropdown */}
               <div
                 ref={permisRef}
                 className="relative"

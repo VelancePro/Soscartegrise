@@ -153,7 +153,7 @@ export default function PlaquesPage() {
                 </div>
               </div>
               <p className="text-gray-400 text-xs text-center">
-                Format illustratif — vos plaques sont personnalisées selon votre immatriculation
+                Format illustratif - vos plaques sont personnalisées selon votre immatriculation
               </p>
             </div>
           </div>

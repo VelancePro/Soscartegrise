@@ -12,7 +12,7 @@ export async function POST(request: Request) {
       from: 'Contact Soscartegrise <contact@soscartegrise31.fr>',
       to: process.env.CONTACT_EMAIL || 'soscartegrise31@hotmail.com',
       replyTo: email,
-      subject: `Nouvelle demande de contact — ${nom} ${prenom || ''}`,
+      subject: `Nouvelle demande de contact - ${nom} ${prenom || ''}`,
       html: `
         <h2>Nouvelle demande de contact</h2>
         <table cellpadding="8" style="border-collapse:collapse;width:100%">

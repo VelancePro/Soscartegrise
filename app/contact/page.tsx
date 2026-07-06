@@ -361,7 +361,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localisation Soscartegrise — 17 Boulevard Charles de Gaulle, Saint-Gaudens"
+                title="Localisation Soscartegrise - 17 Boulevard Charles de Gaulle, Saint-Gaudens"
               />
             </div>
           </div>

@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-          {/* Colonne 1 — Logo + description + réseaux */}
+          {/* Colonne 1 - Logo + description + réseaux */}
           <div className="flex flex-col gap-5">
             <Image
               src="/logo.png"
@@ -44,7 +44,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Colonne 2 — Liens rapides */}
+          {/* Colonne 2 - Liens rapides */}
           <div>
             <h3 className="font-titre font-bold text-white text-base mb-5 uppercase tracking-wider">
               Liens rapides
@@ -63,7 +63,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Colonne 3 — Coordonnées */}
+          {/* Colonne 3 - Coordonnées */}
           <div>
             <h3 className="font-titre font-bold text-white text-base mb-5 uppercase tracking-wider">
               Contact
@@ -111,7 +111,7 @@ export default function Footer() {
       {/* Bande rouge basse */}
       <div className="bg-rouge py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-white text-xs">
-          <span>© {new Date().getFullYear()} Soscartegrise — Tous droits réservés</span>
+          <span>© {new Date().getFullYear()} Soscartegrise - Tous droits réservés</span>
           <a
             href="https://velance.fr/"
             target="_blank"

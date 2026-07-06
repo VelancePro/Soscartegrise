@@ -15,14 +15,14 @@ import PrestationImageCard from '@/components/PrestationImageCard';
 import CarteFrance from '@/components/CarteFrance';
 
 export const metadata: Metadata = {
-  title: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
+  title: 'Carte grise à Saint-Gaudens | Soscartegrise - Habilité État',
   description:
-    "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Changement de titulaire, duplicata, carte grise étrangère. Évitez la préfecture, dossier traité en 10 minutes sur place.",
+    "Carte grise à Saint-Gaudens (31) : changement de titulaire, duplicata, véhicule étranger. Habilité par l'État, dossier traité en 10 min sur place. 06 19 92 33 40.",
   keywords: 'carte grise Saint-Gaudens, carte grise 31, carte grise Toulouse, certificat immatriculation Haute-Garonne, carte grise habilité état, carte grise Comminges',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Carte grise à Saint-Gaudens | Soscartegrise — Habilité État',
-    description: "Soscartegrise, votre spécialiste carte grise à Saint-Gaudens (31). Habilité par l'État.",
+    title: 'Carte grise à Saint-Gaudens | Soscartegrise - Habilité État',
+    description: "Carte grise à Saint-Gaudens (31), habilité par l'État. Changement de titulaire, duplicata, véhicule étranger. Dossier traité en 10 min sur place.",
   },
 };
 
@@ -120,7 +120,7 @@ export default function HomePage() {
         }
       }} />
 
-      {/* ===== SECTION 1 — HERO ===== */}
+      {/* ===== SECTION 1 - HERO ===== */}
       <section className="relative min-h-[92vh] flex items-end overflow-hidden">
         {/* Background photo */}
         <div
@@ -131,14 +131,14 @@ export default function HomePage() {
             backgroundPosition: 'center 40%',
           }}
         />
-        {/* Gradient overlay — sombre à gauche, léger à droite */}
+        {/* Gradient overlay - sombre à gauche, léger à droite */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/15" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
 
-        {/* Badge flottant — droite, un peu plus bas */}
+        {/* Badge flottant - droite, un peu plus bas */}
         <BadgeFlottant />
 
-        {/* Contenu — aligné en bas à gauche */}
+        {/* Contenu - aligné en bas à gauche */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 pb-16 md:pb-24 pt-40">
 
           {/* Badge habilitation */}
@@ -198,7 +198,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== SECTION 2 — PRÉSENTATION ===== */}
+      {/* ===== SECTION 2 - PRÉSENTATION ===== */}
       <SectionWrapper className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-6">
@@ -230,7 +230,7 @@ export default function HomePage() {
           <div className="relative h-80 lg:h-[420px] rounded-3xl overflow-hidden shadow-2xl">
             <Image
               src="/carte-grise-presentation.webp"
-              alt="Soscartegrise — Spécialiste carte grise à Saint-Gaudens, Haute-Garonne"
+              alt="Soscartegrise - Spécialiste carte grise à Saint-Gaudens, Haute-Garonne"
               fill
               className="object-cover"
             />
@@ -238,7 +238,7 @@ export default function HomePage() {
         </div>
       </SectionWrapper>
 
-      {/* ===== SECTION 3 — PRESTATIONS ===== */}
+      {/* ===== SECTION 3 - PRESTATIONS ===== */}
       <SectionWrapper id="prestations" className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -275,7 +275,7 @@ export default function HomePage() {
         </div>
       </SectionWrapper>
 
-      {/* ===== SECTION 4 — POINTS FORTS ===== */}
+      {/* ===== SECTION 4 - POINTS FORTS ===== */}
       <SectionWrapper className="relative py-24 px-4 overflow-hidden">
         {/* Photo de fond */}
         <div
@@ -334,7 +334,7 @@ export default function HomePage() {
         </div>
       </SectionWrapper>
 
-      {/* ===== SECTIONS 5+6 — CARTE + DOCUMENTS ===== */}
+      {/* ===== SECTIONS 5+6 - CARTE + DOCUMENTS ===== */}
       <SectionWrapper className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
 
@@ -355,12 +355,12 @@ export default function HomePage() {
           {/* Contenu 2 colonnes */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
 
-            {/* Gauche — Carte */}
+            {/* Gauche - Carte */}
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-gray-100">
               <CarteFrance />
             </div>
 
-            {/* Droite — Documents (même hauteur que la carte) */}
+            {/* Droite - Documents (même hauteur que la carte) */}
             <div className="flex flex-col gap-5">
               {documents.map((doc) => (
                 <div
@@ -393,7 +393,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Bouton simulateur — en dessous des 2 colonnes */}
+          {/* Bouton simulateur - en dessous des 2 colonnes */}
           <div className="flex justify-center mt-10">
             <a
               href="https://www.service-public.fr/simulateur/calcul/cout-certificat-immatriculation"
@@ -408,7 +408,7 @@ export default function HomePage() {
         </div>
       </SectionWrapper>
 
-      {/* ===== SECTION 7 — AVIS ===== */}
+      {/* ===== SECTION 7 - AVIS ===== */}
       <SectionWrapper className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -425,7 +425,7 @@ export default function HomePage() {
                 ))}
               </div>
               <span className="font-titre font-bold text-gray-900 text-xl">5/5</span>
-              <span className="text-gray-500 text-sm">— basée sur 10 avis Google</span>
+              <span className="text-gray-500 text-sm">- basée sur 10 avis Google</span>
             </div>
           </div>
           <AvisCarrousel />
@@ -448,7 +448,7 @@ export default function HomePage() {
         </div>
       </SectionWrapper>
 
-      {/* ===== SECTION 8 — CTA FINAL ===== */}
+      {/* ===== SECTION 8 - CTA FINAL ===== */}
       <CTABanner />
     </>
   );
