@@ -111,23 +111,18 @@ export default function Footer() {
       {/* Bande rouge basse */}
       <div className="bg-rouge py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-white text-xs">
-          {/* Copyright client + signature agence discrète : le client garde la vedette */}
-          <p className="text-center sm:text-left">
-            <span>© {new Date().getFullYear()} Soscartegrise - Tous droits réservés</span>{' '}
-            <span className="block max-sm:mt-1 sm:inline sm:whitespace-nowrap">
-              <span className="opacity-70 max-sm:hidden">· </span>
-              <span className="opacity-70">Site réalisé par </span>
-              <a
-                href="https://www.velance.fr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 align-middle opacity-70 transition-opacity duration-500 hover:opacity-100"
-              >
-                <Image src="/icone-velance.png" alt="" width={300} height={300} className="h-[18px] w-auto" />
-                <span className="border-b border-white/40">Velance</span>
-              </a>
-            </span>
-          </p>
+          <span>© {new Date().getFullYear()} Soscartegrise - Tous droits réservés</span>
+          {/* Signature agence, centrée et lisible mais sobre */}
+          <a
+            href="https://www.velance.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 align-middle text-sm text-white opacity-90 transition-opacity duration-300 hover:opacity-100"
+          >
+            <span>Réalisé par</span>
+            <Image src="/icone-velance.png" alt="" width={300} height={300} className="h-[22px] w-auto" />
+            <span className="border-b border-white/50">Velance</span>
+          </a>
           <div className="flex gap-4">
             <Link href="/mentions-legales" className="hover:underline">
               Mentions légales
