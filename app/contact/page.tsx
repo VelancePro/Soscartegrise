@@ -15,6 +15,7 @@ interface FormData {
   ville: string;
   message: string;
   rgpd: boolean;
+  website?: string;
 }
 
 export default function ContactPage() {
@@ -75,6 +76,15 @@ export default function ContactPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5" noValidate>
+                {/* Pot de miel anti-bot : invisible pour les humains, doit rester vide */}
+                <input
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  {...register('website')}
+                  style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }}
+                />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   {/* Nom */}
                   <div className="flex flex-col gap-1.5">

@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // N'expose pas la techno (en-tete X-Powered-By)
+  poweredByHeader: false,
   images: {
     remotePatterns: [],
   },
